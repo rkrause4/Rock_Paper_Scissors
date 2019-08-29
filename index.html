@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/stylesheet.min.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <h2>
+          Round <span class="current-round">1</span> of
+          <span class="round-total">7</span>
+        </h2>
+
+        <div class="scoreboard">
+          <div class="user-score">
+            <h3>Your Score</h3>
+            <h3 id="user-score-output">0</h3>
+          </div>
+          <div class="computer-score">
+            <h3>AI Score</h3>
+            <h3 id="comp-score-output">0</h3>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="game-screen">
+          <img
+            src="images/rock.png"
+            alt="Rock Hand signal"
+            data-type="rock"
+            title="Choose Rock"
+          />
+          <img
+            src="images/paper.png"
+            alt="Paper Hand signal"
+            data-type="paper"
+            title="Choose Paper"
+          />
+          <img
+            src="images/scissors.png"
+            alt="Scissors Hand signal"
+            data-type="scissors"
+            title="Choose Scissors"
+          />
+        </div>
+        <div class="game-moves">
+          <div class="users-moves">
+            <h3>Your Pick</h3>
+            <h4 id="users-last-move"></h4>
+          </div>
+          <div class="comp-moves">
+            <h3>AI Pick</h3>
+            <h4 id="comp-last-move"></h4>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>
+          View the code on
+          <a
+            href="https://github.com/rkrause4/100DaysOfCode/tree/master/Rock_Paper_Scissors"
+            target="_blank"
+            >GitHub</a
+          >
+        </p>
+        <p>Icons by <a href="https://icons8.com" target="_blank">Icons8</a></p>
+      </div>
+    </footer>
+
+    <div class="round-winner-modal">
+      <div class="round-winner-overlay">
+        <h2 id="modal-draw">
+          It's a draw!
+        </h2>
+        <h2 id="modal-winning-message"></h2>
+        <h2 id="modal-winner">
+          <span id="modal-winner-title">User</span> Wins Round
+          <span class="current-round">1</span>
+        </h2>
+        <h4>
+          Round
+          <span class="current-round">1</span> of
+          <span class="round-total">7</span>
+        </h4>
+        <a href="#" id="game-reset">Play Again?</a>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
