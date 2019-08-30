@@ -1,4 +1,4 @@
-# Rock_Paper_Scissors
+# Rock Paper Scissors
 A game made using HTML, SCSS, and JavaScript. Try it out yourself!
 
 
